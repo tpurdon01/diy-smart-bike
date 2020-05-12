@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB3F8462246AB86D0041D34F /* StopWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3F8461246AB86D0041D34F /* StopWatchView.swift */; };
+		BB685B5424685C2B0000B0E4 /* bleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB685B5324685C2B0000B0E4 /* bleManager.swift */; };
+		BB7F65EF246851A400D972B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7F65EE246851A400D972B7 /* AppDelegate.swift */; };
+		BB7F65F1246851A400D972B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7F65F0246851A400D972B7 /* SceneDelegate.swift */; };
+		BB7F65F4246851A400D972B7 /* diy_smart_bike.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB7F65F2246851A400D972B7 /* diy_smart_bike.xcdatamodeld */; };
+		BB7F65F6246851A400D972B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7F65F5246851A400D972B7 /* ContentView.swift */; };
+		BB7F65F8246851A900D972B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7F65F7246851A900D972B7 /* Assets.xcassets */; };
+		BB7F65FB246851A900D972B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7F65FA246851A900D972B7 /* Preview Assets.xcassets */; };
+		BB7F65FE246851A900D972B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7F65FC246851A900D972B7 /* LaunchScreen.storyboard */; };
+		BB7F6609246851A900D972B7 /* diy_smart_bikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7F6608246851A900D972B7 /* diy_smart_bikeTests.swift */; };
+		BB7F6614246851A900D972B7 /* diy_smart_bikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7F6613246851A900D972B7 /* diy_smart_bikeUITests.swift */; };
+		BB7F6622246851FE00D972B7 /* BikeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7F6621246851FE00D972B7 /* BikeViewModel.swift */; };
+		BB7F66242468526200D972B7 /* BikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7F66232468526200D972B7 /* BikeView.swift */; };
+		BBEAE7F92468A06D00BCAB2C /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEAE7F82468A06C00BCAB2C /* StopWatch.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB7F6605246851A900D972B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7F65E3246851A400D972B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB7F65EA246851A400D972B7;
+			remoteInfo = "diy-smart-bike";
+		};
+		BB7F6610246851A900D972B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7F65E3246851A400D972B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB7F65EA246851A400D972B7;
+			remoteInfo = "diy-smart-bike";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB3F8461246AB86D0041D34F /* StopWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchView.swift; sourceTree = "<group>"; };
+		BB685B5324685C2B0000B0E4 /* bleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bleManager.swift; sourceTree = "<group>"; };
+		BB7F65EB246851A400D972B7 /* diy-smart-bike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "diy-smart-bike.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB7F65EE246851A400D972B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB7F65F0246851A400D972B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BB7F65F3246851A400D972B7 /* diy_smart_bike.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = diy_smart_bike.xcdatamodel; sourceTree = "<group>"; };
+		BB7F65F5246851A400D972B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB7F65F7246851A900D972B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB7F65FA246851A900D972B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB7F65FD246851A900D972B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB7F65FF246851A900D972B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB7F6604246851A900D972B7 /* diy-smart-bikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "diy-smart-bikeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB7F6608246851A900D972B7 /* diy_smart_bikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diy_smart_bikeTests.swift; sourceTree = "<group>"; };
+		BB7F660A246851A900D972B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB7F660F246851A900D972B7 /* diy-smart-bikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "diy-smart-bikeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB7F6613246851A900D972B7 /* diy_smart_bikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diy_smart_bikeUITests.swift; sourceTree = "<group>"; };
+		BB7F6615246851A900D972B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB7F6621246851FE00D972B7 /* BikeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeViewModel.swift; sourceTree = "<group>"; };
+		BB7F66232468526200D972B7 /* BikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeView.swift; sourceTree = "<group>"; };
+		BBEAE7F82468A06C00BCAB2C /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB7F65E8246851A400D972B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7F6601246851A900D972B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7F660C246851A900D972B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB7F65E2246851A400D972B7 = {
+			isa = PBXGroup;
+			children = (
+				BB7F65ED246851A400D972B7 /* diy-smart-bike */,
+				BB7F6607246851A900D972B7 /* diy-smart-bikeTests */,
+				BB7F6612246851A900D972B7 /* diy-smart-bikeUITests */,
+				BB7F65EC246851A400D972B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB7F65EC246851A400D972B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB7F65EB246851A400D972B7 /* diy-smart-bike.app */,
+				BB7F6604246851A900D972B7 /* diy-smart-bikeTests.xctest */,
+				BB7F660F246851A900D972B7 /* diy-smart-bikeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB7F65ED246851A400D972B7 /* diy-smart-bike */ = {
+			isa = PBXGroup;
+			children = (
+				BB7F65EE246851A400D972B7 /* AppDelegate.swift */,
+				BB7F65F0246851A400D972B7 /* SceneDelegate.swift */,
+				BB685B5324685C2B0000B0E4 /* bleManager.swift */,
+				BB7F65F5246851A400D972B7 /* ContentView.swift */,
+				BBEAE7F82468A06C00BCAB2C /* StopWatch.swift */,
+				BB7F6621246851FE00D972B7 /* BikeViewModel.swift */,
+				BB3F8461246AB86D0041D34F /* StopWatchView.swift */,
+				BB7F66232468526200D972B7 /* BikeView.swift */,
+				BB7F65F7246851A900D972B7 /* Assets.xcassets */,
+				BB7F65FC246851A900D972B7 /* LaunchScreen.storyboard */,
+				BB7F65FF246851A900D972B7 /* Info.plist */,
+				BB7F65F2246851A400D972B7 /* diy_smart_bike.xcdatamodeld */,
+				BB7F65F9246851A900D972B7 /* Preview Content */,
+			);
+			path = "diy-smart-bike";
+			sourceTree = "<group>";
+		};
+		BB7F65F9246851A900D972B7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BB7F65FA246851A900D972B7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB7F6607246851A900D972B7 /* diy-smart-bikeTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB7F6608246851A900D972B7 /* diy_smart_bikeTests.swift */,
+				BB7F660A246851A900D972B7 /* Info.plist */,
+			);
+			path = "diy-smart-bikeTests";
+			sourceTree = "<group>";
+		};
+		BB7F6612246851A900D972B7 /* diy-smart-bikeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB7F6613246851A900D972B7 /* diy_smart_bikeUITests.swift */,
+				BB7F6615246851A900D972B7 /* Info.plist */,
+			);
+			path = "diy-smart-bikeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB7F65EA246851A400D972B7 /* diy-smart-bike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB7F6618246851A900D972B7 /* Build configuration list for PBXNativeTarget "diy-smart-bike" */;
+			buildPhases = (
+				BB7F65E7246851A400D972B7 /* Sources */,
+				BB7F65E8246851A400D972B7 /* Frameworks */,
+				BB7F65E9246851A400D972B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "diy-smart-bike";
+			productName = "diy-smart-bike";
+			productReference = BB7F65EB246851A400D972B7 /* diy-smart-bike.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB7F6603246851A900D972B7 /* diy-smart-bikeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB7F661B246851A900D972B7 /* Build configuration list for PBXNativeTarget "diy-smart-bikeTests" */;
+			buildPhases = (
+				BB7F6600246851A900D972B7 /* Sources */,
+				BB7F6601246851A900D972B7 /* Frameworks */,
+				BB7F6602246851A900D972B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB7F6606246851A900D972B7 /* PBXTargetDependency */,
+			);
+			name = "diy-smart-bikeTests";
+			productName = "diy-smart-bikeTests";
+			productReference = BB7F6604246851A900D972B7 /* diy-smart-bikeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB7F660E246851A900D972B7 /* diy-smart-bikeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB7F661E246851A900D972B7 /* Build configuration list for PBXNativeTarget "diy-smart-bikeUITests" */;
+			buildPhases = (
+				BB7F660B246851A900D972B7 /* Sources */,
+				BB7F660C246851A900D972B7 /* Frameworks */,
+				BB7F660D246851A900D972B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB7F6611246851A900D972B7 /* PBXTargetDependency */,
+			);
+			name = "diy-smart-bikeUITests";
+			productName = "diy-smart-bikeUITests";
+			productReference = BB7F660F246851A900D972B7 /* diy-smart-bikeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB7F65E3246851A400D972B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = TomPurdon;
+				TargetAttributes = {
+					BB7F65EA246851A400D972B7 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					BB7F6603246851A900D972B7 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = BB7F65EA246851A400D972B7;
+					};
+					BB7F660E246851A900D972B7 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = BB7F65EA246851A400D972B7;
+					};
+				};
+			};
+			buildConfigurationList = BB7F65E6246851A400D972B7 /* Build configuration list for PBXProject "diy-smart-bike" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB7F65E2246851A400D972B7;
+			productRefGroup = BB7F65EC246851A400D972B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB7F65EA246851A400D972B7 /* diy-smart-bike */,
+				BB7F6603246851A900D972B7 /* diy-smart-bikeTests */,
+				BB7F660E246851A900D972B7 /* diy-smart-bikeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB7F65E9246851A400D972B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7F65FE246851A900D972B7 /* LaunchScreen.storyboard in Resources */,
+				BB7F65FB246851A900D972B7 /* Preview Assets.xcassets in Resources */,
+				BB7F65F8246851A900D972B7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7F6602246851A900D972B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7F660D246851A900D972B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB7F65E7246851A400D972B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7F65F4246851A400D972B7 /* diy_smart_bike.xcdatamodeld in Sources */,
+				BB7F6622246851FE00D972B7 /* BikeViewModel.swift in Sources */,
+				BB7F65EF246851A400D972B7 /* AppDelegate.swift in Sources */,
+				BB3F8462246AB86D0041D34F /* StopWatchView.swift in Sources */,
+				BB685B5424685C2B0000B0E4 /* bleManager.swift in Sources */,
+				BB7F66242468526200D972B7 /* BikeView.swift in Sources */,
+				BB7F65F6246851A400D972B7 /* ContentView.swift in Sources */,
+				BB7F65F1246851A400D972B7 /* SceneDelegate.swift in Sources */,
+				BBEAE7F92468A06D00BCAB2C /* StopWatch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7F6600246851A900D972B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7F6609246851A900D972B7 /* diy_smart_bikeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7F660B246851A900D972B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7F6614246851A900D972B7 /* diy_smart_bikeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB7F6606246851A900D972B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB7F65EA246851A400D972B7 /* diy-smart-bike */;
+			targetProxy = BB7F6605246851A900D972B7 /* PBXContainerItemProxy */;
+		};
+		BB7F6611246851A900D972B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB7F65EA246851A400D972B7 /* diy-smart-bike */;
+			targetProxy = BB7F6610246851A900D972B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB7F65FC246851A900D972B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB7F65FD246851A900D972B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB7F6616246851A900D972B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB7F6617246851A900D972B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB7F6619246851A900D972B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"diy-smart-bike/Preview Content\"";
+				DEVELOPMENT_TEAM = FUDWU8TBAS;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "diy-smart-bike/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TomPurdon.diy-smart-bike";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB7F661A246851A900D972B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"diy-smart-bike/Preview Content\"";
+				DEVELOPMENT_TEAM = FUDWU8TBAS;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "diy-smart-bike/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TomPurdon.diy-smart-bike";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB7F661C246851A900D972B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FUDWU8TBAS;
+				INFOPLIST_FILE = "diy-smart-bikeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TomPurdon.diy-smart-bikeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/diy-smart-bike.app/diy-smart-bike";
+			};
+			name = Debug;
+		};
+		BB7F661D246851A900D972B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FUDWU8TBAS;
+				INFOPLIST_FILE = "diy-smart-bikeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TomPurdon.diy-smart-bikeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/diy-smart-bike.app/diy-smart-bike";
+			};
+			name = Release;
+		};
+		BB7F661F246851A900D972B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FUDWU8TBAS;
+				INFOPLIST_FILE = "diy-smart-bikeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TomPurdon.diy-smart-bikeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "diy-smart-bike";
+			};
+			name = Debug;
+		};
+		BB7F6620246851A900D972B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FUDWU8TBAS;
+				INFOPLIST_FILE = "diy-smart-bikeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TomPurdon.diy-smart-bikeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "diy-smart-bike";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB7F65E6246851A400D972B7 /* Build configuration list for PBXProject "diy-smart-bike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB7F6616246851A900D972B7 /* Debug */,
+				BB7F6617246851A900D972B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB7F6618246851A900D972B7 /* Build configuration list for PBXNativeTarget "diy-smart-bike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB7F6619246851A900D972B7 /* Debug */,
+				BB7F661A246851A900D972B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB7F661B246851A900D972B7 /* Build configuration list for PBXNativeTarget "diy-smart-bikeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB7F661C246851A900D972B7 /* Debug */,
+				BB7F661D246851A900D972B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB7F661E246851A900D972B7 /* Build configuration list for PBXNativeTarget "diy-smart-bikeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB7F661F246851A900D972B7 /* Debug */,
+				BB7F6620246851A900D972B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BB7F65F2246851A400D972B7 /* diy_smart_bike.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BB7F65F3246851A400D972B7 /* diy_smart_bike.xcdatamodel */,
+			);
+			currentVersion = BB7F65F3246851A400D972B7 /* diy_smart_bike.xcdatamodel */;
+			path = diy_smart_bike.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BB7F65E3246851A400D972B7 /* Project object */;
+}
